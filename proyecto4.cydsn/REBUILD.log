@@ -1,0 +1,19 @@
+--------------- Rebuild Started: 10/09/2018 14:01:00 Project: main.c, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM3\ARM_GCC_541\Debug\main.o
+main.c: In function 'main':
+main.c:14:25: error: expected ')' before ';' token
+ #define DS1307_leer 0xD1;
+                         ^
+main.c:34:43: note: in expansion of macro 'DS1307_leer'
+             resultado=I2C_MasterSendStart(DS1307_leer, I2C_WRITE_XFER_MODE);// I2C_WRITE_XFER_MODE
+                                           ^
+main.c:34:23: error: too few arguments to function 'I2C_MasterSendStart'
+             resultado=I2C_MasterSendStart(DS1307_leer, I2C_WRITE_XFER_MODE);// I2C_WRITE_XFER_MODE
+                       ^
+In file included from Generated_Source\PSoC5/project.h:22:0,
+                 from main.c:12:
+Generated_Source\PSoC5/I2C.h:177:11: note: declared here
+     uint8 I2C_MasterSendStart(uint8 slaveAddress, uint8 R_nW) \
+           ^
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Rebuild Failed: 10/09/2018 14:01:02 ---------------
