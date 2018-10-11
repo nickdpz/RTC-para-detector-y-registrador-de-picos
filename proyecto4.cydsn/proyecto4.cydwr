@@ -254,6 +254,10 @@
       <Data key="63aa242a-336b-4bda-9122-4de383003084" value="SCL" />
       <Data key="72b0f3e8-705c-46ab-bddc-c4bbdc86b434/ed092b9b-d398-4703-be89-cebf998501f6" value="LCD_LCDPort" />
       <Data key="264be2d3-9481-494b-8d9c-c1905a45e9cc" value="SDA" />
+      <Data key="422cb269-53b5-402f-9050-1ca55efb35ca/16a808f6-2e13-45b9-bce0-b001c8655113" value="ADC_Bypass" />
+      <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="Rx_1" />
+      <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="M" />
+      <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="Tx_1" />
     </Group>
   </Group>
   <Group key="EEPROM">
@@ -3371,6 +3375,11 @@
     <Group key="264be2d3-9481-494b-8d9c-c1905a45e9cc">
       <Group key="0">
         <Data key="Port Format" value="2,3" />
+      </Group>
+    </Group>
+    <Group key="77715107-f8d5-47e5-a629-0fb83101ac6b">
+      <Group key="0">
+        <Data key="Port Format" value="2,0" />
       </Group>
     </Group>
   </Group>

@@ -1,64 +1,84 @@
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/CortexM3/ARM_GCC_541/Debug/main.o : C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/I2C.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/I2C_PVT.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/LCD.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort_aliases.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SCL.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SCL_aliases.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SDA.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SDA_aliases.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/UART.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/UART_IntClock.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_compiler.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/project.h C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/main.c 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/CortexM3/ARM_GCC_541/Debug/main.o : C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_Bypass.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_Bypass_aliases.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_IRQ.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_theACLK.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CyDmac.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CyFlash.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CyLib.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CySpc.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/I2C.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/I2C_PVT.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/IRS.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/LCD.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort_aliases.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/M.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/M_aliases.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SCL.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SCL_aliases.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SDA.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SDA_aliases.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/Timer.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/UART.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/UART_IntClock.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_armcc.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_compiler.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_gcc.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cyPm.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cydevice.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cydisabledsheets.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cypins.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cytypes.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/project.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/timer_clock.h C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/main.c 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CyDmac.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_Bypass.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CyLib.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_Bypass_aliases.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/CySpc.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_IRQ.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/I2C.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/ADC_theACLK.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/I2C_PVT.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CyDmac.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/LCD.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CyFlash.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CyLib.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort_aliases.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/CySpc.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SCL.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/I2C.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SCL_aliases.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/I2C_PVT.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SDA.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/IRS.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/SDA_aliases.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/LCD.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/UART.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/UART_IntClock.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/LCD_LCDPort_aliases.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/M.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_compiler.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/M_aliases.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SCL.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SCL_aliases.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SDA.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cyPm.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/SDA_aliases.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/Timer.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cydevice.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/UART.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/UART_IntClock.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_compiler.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cypins.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/cytypes.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/Generated_Source/PSoC5/project.h : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cyPm.h : 
 
-C:/Users/Dell/Documents/PSoC\ Creator/i2c_tiempo_voltaje_pico/proyecto4.cydsn/main.c : 
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/project.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/Generated_Source/PSoC5/timer_clock.h : 
+
+C:/Users/nikod/Documents/Sistemas\ Embebidos/RTC-para-detector-y-registrador-de-picos/proyecto4.cydsn/main.c : 
 

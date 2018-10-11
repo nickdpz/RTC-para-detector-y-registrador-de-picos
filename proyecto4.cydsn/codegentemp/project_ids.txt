@@ -1,6 +1,6 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|9cc93f30-a50a-42ba-992b-3f6b4f1b849d
-C:\Users\Dell\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|6843ab22-893a-4d50-a8fc-8136ac589d12
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5b9a3bce-40a2-49df-a148-b0d6561be93e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|53423624-2f5e-4b09-a58e-37b1786c0fd9
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2e6274b6-3961-4314-aae5-b1df408ba7f0
-C:\Users\Dell\Documents\PSoC Creator\i2c_tiempo_voltaje_pico\proyecto4.cydsn\proyecto4.cyprj|f5768fd3-b533-44ef-bbfb-7c40da1da6b5
+C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\proyecto4.cyprj|c08ee88b-0ed9-4622-b33f-80c365e68b1b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|5b62de37-5cc1-434c-8e07-0f860b21ff58
+C:\Users\nikod\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|d6ef556f-3232-41b2-b45b-7a39678984a4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e34fd545-4ec9-4462-bbdf-209f3b9c1719
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d1a523df-8a26-401d-87eb-3bd49572e328
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a54af3f7-05d1-44be-9986-b838451a5bef
