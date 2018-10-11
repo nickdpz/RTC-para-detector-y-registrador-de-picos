@@ -30,7 +30,7 @@ uint8_t datos[8];
 }rtc_t;
 
 rtc_t ds;
-uint16 aux[3]={0};
+uint16 aux[3]={0,3000,1000};
 
 
 void DS_begintx (void){
@@ -71,21 +71,18 @@ void DS_get_data(){
 }
 
 CY_ISR(Inte){
-    /*
     uint16 temp=0;
     aux[0]=aux[1];
     aux[1]=aux[2];
     ADC_StartConvert();
     ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
     temp=ADC_GetResult16();
-    aux[2]=ADC_CountsTo_mVolts(temp);*/
-    LCD_Position(0,0);
-    LCD_PrintNumber(8);/*
+    aux[2]=ADC_CountsTo_mVolts(temp);
     if(aux[1]>=2500){
         if((aux[1]>aux[0])&(aux[1]>aux[2])){
             DS_get_data();
             LCD_Position(0,0);
-            LCD_PrintNumber(0x0F&(ds.hour>>4));
+            LCD_PrintNumber(0x01&(ds.hour>>4));
             LCD_PrintNumber((0b00001111)&ds.hour);
             LCD_PutChar(':');
             LCD_PrintNumber(ds.min>>4);
@@ -95,9 +92,8 @@ CY_ISR(Inte){
             LCD_PrintNumber((0b00001111)&ds.sec);
         }
     
-    }*/
-
-}
+    }
+    }
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -105,6 +101,7 @@ int main(void)
     I2C_Start();
     Timer_Start();
     IRS_StartEx(Inte);
+    ADC_Start();
     ds.hour = 0x08;
     ds.min =  0x54;
     ds.sec =  0x30; //  08:06:30 am

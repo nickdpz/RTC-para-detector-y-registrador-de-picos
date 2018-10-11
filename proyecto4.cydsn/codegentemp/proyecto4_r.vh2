@@ -1,5 +1,5 @@
 -- Project:   proyecto4
--- Generated: 10/11/2018 12:48:45
+-- Generated: 10/11/2018 13:07:22
 -- PSoC Creator  4.2
 
 ENTITY proyecto4 IS
@@ -43,11 +43,11 @@ ARCHITECTURE __DEFAULT__ OF proyecto4 IS
     ATTRIBUTE placement_force OF Net_33 : SIGNAL IS "U(3,5,A)3";
     SIGNAL Net_38 : bit;
     SIGNAL Net_47 : bit;
-    SIGNAL Net_51 : bit;
     SIGNAL Net_52 : bit;
     ATTRIBUTE global_signal OF Net_52 : SIGNAL IS true;
     SIGNAL Net_52_local : bit;
-    SIGNAL Net_65 : bit;
+    SIGNAL Net_69 : bit;
+    SIGNAL Net_72 : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL SCL(0)__PA : bit;
     SIGNAL SDA(0)__PA : bit;
@@ -1188,7 +1188,7 @@ BEGIN
         GENERIC MAP(
             drive_mode => "000",
             ibuf_enabled => "0",
-            id => "422cb269-53b5-402f-9050-1ca55efb35ca/16a808f6-2e13-45b9-bce0-b001c8655113",
+            id => "347da4b4-923e-4036-8cce-51c03c67095e/16a808f6-2e13-45b9-bce0-b001c8655113",
             init_dr_st => "0",
             input_buffer_sel => "00",
             input_clk_en => 0,
@@ -1641,7 +1641,7 @@ BEGIN
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_65,
+            interrupt => Net_69,
             clock => ClockBlock_BUS_CLK);
 
     \ADC:ADC_SAR\:sarcell
@@ -1660,7 +1660,7 @@ BEGIN
             vn_ctl_udb_1 => open,
             vn_ctl_udb_0 => open,
             irq => \ADC:Net_252\,
-            next => Net_51,
+            next => Net_72,
             data_out_udb_11 => \ADC:Net_207_11\,
             data_out_udb_10 => \ADC:Net_207_10\,
             data_out_udb_9 => \ADC:Net_207_9\,
@@ -1673,7 +1673,7 @@ BEGIN
             data_out_udb_2 => \ADC:Net_207_2\,
             data_out_udb_1 => \ADC:Net_207_1\,
             data_out_udb_0 => \ADC:Net_207_0\,
-            eof_udb => Net_65);
+            eof_udb => Net_69);
 
     \Timer:TimerHW\:timercell
         GENERIC MAP(

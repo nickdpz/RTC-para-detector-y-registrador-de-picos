@@ -1,6 +1,6 @@
-C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\proyecto4.cyprj|c08ee88b-0ed9-4622-b33f-80c365e68b1b
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|5b62de37-5cc1-434c-8e07-0f860b21ff58
-C:\Users\nikod\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|d6ef556f-3232-41b2-b45b-7a39678984a4
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e34fd545-4ec9-4462-bbdf-209f3b9c1719
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d1a523df-8a26-401d-87eb-3bd49572e328
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a54af3f7-05d1-44be-9986-b838451a5bef
+C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\proyecto4.cyprj|26b90382-c5a5-4e77-99b9-11cdfb01eab8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|2cbb9172-974c-4c4a-b994-16438f34bc38
+C:\Users\nikod\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|2b05d4a1-182c-41b0-9799-69fe919b578d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|038c7cc3-4899-4f18-91e4-46aa7c7a6762
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7119a6c9-a060-4758-a7a1-bc937a8eda1a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|77707f1b-386e-47c0-8ae6-a68da17365d8

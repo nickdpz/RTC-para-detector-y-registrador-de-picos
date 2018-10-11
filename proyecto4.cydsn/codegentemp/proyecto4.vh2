@@ -2,7 +2,7 @@
 --	Conversion of proyecto4.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Oct 11 12:48:39 2018
+--	Thu Oct 11 13:07:17 2018
 --
 
 USE cypress.cypress.all;
@@ -381,7 +381,7 @@ TERMINAL tmpSIOVREF__Tx_1_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Tx_1_net_0 : bit;
 TERMINAL \ADC:Net_248\ : bit;
 TERMINAL \ADC:Net_235\ : bit;
-SIGNAL Net_65 : bit;
+SIGNAL Net_69 : bit;
 SIGNAL \ADC:vp_ctl_0\ : bit;
 SIGNAL \ADC:vp_ctl_2\ : bit;
 SIGNAL \ADC:vn_ctl_1\ : bit;
@@ -400,7 +400,7 @@ TERMINAL \ADC:Net_215\ : bit;
 TERMINAL \ADC:Net_257\ : bit;
 SIGNAL \ADC:soc\ : bit;
 SIGNAL \ADC:Net_252\ : bit;
-SIGNAL Net_51 : bit;
+SIGNAL Net_72 : bit;
 SIGNAL \ADC:Net_207_11\ : bit;
 SIGNAL \ADC:Net_207_10\ : bit;
 SIGNAL \ADC:Net_207_9\ : bit;
@@ -1295,13 +1295,13 @@ Tx_1:cy_psoc3_pins_v1_10
 \ADC:IRQ\:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_65);
+	PORT MAP(int_signal=>Net_69);
 \ADC:theACLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
-		id=>"422cb269-53b5-402f-9050-1ca55efb35ca/696a0979-21fc-4185-bf38-6c79febcde7a",
+		id=>"347da4b4-923e-4036-8cce-51c03c67095e/696a0979-21fc-4185-bf38-6c79febcde7a",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"714285714.285714",
+		period=>"107142803.571455",
 		is_direct=>'0',
 		is_digital=>'0')
 	PORT MAP(clock_out=>\ADC:Net_385\,
@@ -1320,18 +1320,18 @@ Tx_1:cy_psoc3_pins_v1_10
 		vp_ctl_udb=>(zero, zero, zero, zero),
 		vn_ctl_udb=>(zero, zero, zero, zero),
 		irq=>\ADC:Net_252\,
-		next_out=>Net_51,
+		next_out=>Net_72,
 		data_out=>(\ADC:Net_207_11\, \ADC:Net_207_10\, \ADC:Net_207_9\, \ADC:Net_207_8\,
 			\ADC:Net_207_7\, \ADC:Net_207_6\, \ADC:Net_207_5\, \ADC:Net_207_4\,
 			\ADC:Net_207_3\, \ADC:Net_207_2\, \ADC:Net_207_1\, \ADC:Net_207_0\),
-		eof_udb=>Net_65);
+		eof_udb=>Net_69);
 \ADC:cy_analog_virtualmux_2_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
 	PORT MAP(signal1=>\ADC:Net_215\,
 		signal2=>\ADC:Net_210\);
 \ADC:Bypass\:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"422cb269-53b5-402f-9050-1ca55efb35ca/16a808f6-2e13-45b9-bce0-b001c8655113",
+	GENERIC MAP(id=>"347da4b4-923e-4036-8cce-51c03c67095e/16a808f6-2e13-45b9-bce0-b001c8655113",
 		drive_mode=>"000",
 		ibuf_enabled=>"0",
 		init_dr_st=>"0",

@@ -1,6 +1,6 @@
 // ======================================================================
 // proyecto4.v generated from TopDesign.cysch
-// 10/11/2018 at 12:48
+// 10/11/2018 at 13:07
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -563,7 +563,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v"
 `endif
 
-// ADC_SAR_v3_10(ADC_Clock=1, ADC_Clock_Frequency=1400000, ADC_Input_Range=1, ADC_Power=0, ADC_Reference=1, ADC_Resolution=8, ADC_SampleMode=0, Enable_next_out=false, Ref_Voltage=2.5, Ref_Voltage_mV=2500, rm_int=false, Sample_Precharge=6, Sample_Rate=100000, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=ADC_SAR_v3_10, CY_CONFIG_TITLE=ADC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ADC, CY_INSTANCE_SHORT_NAME=ADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=10, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=ADC, )
+// ADC_SAR_v3_10(ADC_Clock=1, ADC_Clock_Frequency=9333338, ADC_Input_Range=1, ADC_Power=0, ADC_Reference=1, ADC_Resolution=8, ADC_SampleMode=0, Enable_next_out=false, Ref_Voltage=2.5, Ref_Voltage_mV=2500, rm_int=false, Sample_Precharge=6, Sample_Rate=666667, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=ADC_SAR_v3_10, CY_CONFIG_TITLE=ADC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ADC, CY_INSTANCE_SHORT_NAME=ADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=10, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=ADC, )
 module ADC_SAR_v3_10_3 (
     vplus,
     vminus,
@@ -645,10 +645,10 @@ module ADC_SAR_v3_10_3 (
 
 
 	cy_clock_v1_0
-		#(.id("422cb269-53b5-402f-9050-1ca55efb35ca/696a0979-21fc-4185-bf38-6c79febcde7a"),
+		#(.id("347da4b4-923e-4036-8cce-51c03c67095e/696a0979-21fc-4185-bf38-6c79febcde7a"),
 		  .source_clock_id(""),
 		  .divisor(0),
-		  .period("714285714.285714"),
+		  .period("107142803.571455"),
 		  .is_direct(0),
 		  .is_digital(0))
 		theACLK
@@ -687,7 +687,7 @@ module ADC_SAR_v3_10_3 (
 	electrical [0:0] tmpSIOVREF__Bypass_net;
 
 	cy_psoc3_pins_v1_10
-		#(.id("422cb269-53b5-402f-9050-1ca55efb35ca/16a808f6-2e13-45b9-bce0-b001c8655113"),
+		#(.id("347da4b4-923e-4036-8cce-51c03c67095e/16a808f6-2e13-45b9-bce0-b001c8655113"),
 		  .drive_mode(3'b000),
 		  .ibuf_enabled(1'b0),
 		  .init_dr_st(1'b0),
@@ -865,12 +865,12 @@ module top ;
           wire  Net_55;
           wire  Net_54;
           wire  Net_62;
-          wire  Net_51;
-    electrical  Net_50;
-          wire  Net_60;
-          wire  Net_65;
-          wire  Net_66;
-    electrical  Net_46;
+          wire  Net_72;
+    electrical  Net_71;
+          wire  Net_70;
+          wire  Net_69;
+          wire  Net_68;
+    electrical  Net_67;
     electrical  Net_45;
           wire  Net_44;
           wire  Net_43;
@@ -1299,12 +1299,12 @@ module top ;
 
     ADC_SAR_v3_10_3 ADC (
         .vplus(Net_45),
-        .vminus(Net_46),
+        .vminus(Net_67),
         .soc(1'b0),
-        .eoc(Net_65),
+        .eoc(Net_69),
         .aclk(1'b0),
-        .vdac_ref(Net_50),
-        .eos(Net_51));
+        .vdac_ref(Net_71),
+        .eos(Net_72));
 
 
 	cy_clock_v1_0
