@@ -48,7 +48,7 @@ void DS_init(void){
     I2C_MasterWriteByte(direccion_de_registro_control);  
     I2C_MasterWriteByte(registro_control);
     I2C_MasterSendStop();
-    for(int i=0;i<10000;i++){
+    for(int i=0;i<1000;i++){
         EEPROM_WriteByte(0x00,i);}  
 }
 
@@ -130,6 +130,7 @@ void EE_get_data(){
 
 CY_ISR(Inte){
     uint16 temp=0;
+    
     aux[0]=aux[1];
     aux[1]=aux[2];
     ADC_StartConvert();
@@ -164,7 +165,6 @@ CY_ISR(Inte){
     }
 
 CY_ISR(Intswr){
-    CyDelay(1);
     switch(SW_Read()){
     case 0b00000110:
         LCD_ClearDisplay();

@@ -146,6 +146,37 @@
 <VisibleNodeIds>
 <v>i2c_tiempo_voltaje_pico</v>
 <v>i2c_tiempo_voltaje_pico\proyecto4</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Bypass.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\EEPROM.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_BOOT.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_INT.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_MASTER.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_PM.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_SLAVE.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\IRS.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_SW.lst</v>
+<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
