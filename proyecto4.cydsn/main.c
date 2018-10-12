@@ -101,6 +101,17 @@ void visual(){
         LCD_PrintNumber((0b00001111)&ds.sec);
 }
 
+void visual2(){
+        LCD_PrintNumber(0x01&(ds.date>>4));
+        LCD_PrintNumber((0b00001111)&ds.date);
+        LCD_PutChar('/');
+        LCD_PrintNumber(ds.month>>4);
+        LCD_PrintNumber((0b00001111)&ds.month);
+        LCD_PutChar('/');       
+        LCD_PrintNumber(ds.year>>4);
+        LCD_PrintNumber((0b00001111)&ds.year);
+}
+
 void EE_get_data(){
                 
                 LCD_ClearDisplay();
@@ -110,7 +121,9 @@ void EE_get_data(){
                 for(int j=0;j<7;j++){
                     ds.datos[j]=EEPROM_ReadByte((uint16)(9*k+4+j));
                 }    
-                LCD_Position(1,0);  
+                LCD_Position(0,8);
+                visual2();
+                LCD_Position(1,4);  
                 visual();
 }
 
@@ -171,7 +184,7 @@ CY_ISR(Intswr){
     case 0b00000101:
         if(de==1){//Boton desendente
             k=k-1;
-            if(k<0){
+            if(k<=0){
                 k=n;
             }
             EE_get_data();
@@ -182,7 +195,7 @@ CY_ISR(Intswr){
         if(de==1){//Boton acendente
             k=k+1;
             if(k>n){
-                k=0;
+                k=1;
             }
             EE_get_data();                
         }
@@ -203,9 +216,9 @@ int main(void)
     ISR_SW_StartEx(Intswr);
     ADC_Start();
     ds.hour = 0b00010001;
-    ds.min =  0x16;
-    ds.sec =  0x30; //  11:05:30 am
-    ds.date = 0x0C; 
+    ds.min =  0x51;
+    ds.sec =  0x00; //  11:05:30 am
+    ds.date = 0x12; 
     ds.month = 0x10;
     ds.year = 0x18; //12 octubre 2018
     ds.weekDay = 5; // Friday: 5th day of week considering monday as first day.
