@@ -34,7 +34,7 @@ uint16 aux[3]={0,3000,1000};
 volatile uint8 de=0;//Muestra Hora
 volatile uint16 m=0;//  Numero de datos guardados
 volatile uint16 n=0;// Cuenta de datos
-volatile uint16 k=0;//Cuenta dato actual
+volatile int k=0;//Cuenta dato actual
 
 
 void DS_begintx (void){
@@ -48,13 +48,15 @@ void DS_init(void){
     I2C_MasterWriteByte(direccion_de_registro_control);  
     I2C_MasterWriteByte(registro_control);
     I2C_MasterSendStop();
-    
+    for(int i=0;i<10000;i++){
+        EEPROM_WriteByte(0x00,i);}  
 }
 
 void DS_set_data(){
-    uint8 i;
-    DS_begintx();
+    uint8 i; 
+    
     for(i=0;i<=7;i++){
+        DS_begintx();
         I2C_MasterWriteByte(i);     // Escribe la posicion 
         I2C_MasterWriteByte(ds.datos[i]);            // Escribe el dato correspondiente
         I2C_MasterSendStop();
@@ -72,6 +74,22 @@ void DS_get_data(){
     }    
 }
 
+uint16 E2PROM_16_R(uint16 p){
+    uint16 temp;
+    temp=EEPROM_ReadByte(p+1)<<8;
+    temp=temp+EEPROM_ReadByte(p);
+    return temp;
+}
+
+void E2PROM_16_W(uint16 a,uint16 p){
+    uint8 temp;
+    temp=(uint8)(0xFF&a);
+    EEPROM_WriteByte(temp,p);
+    temp=(uint8)(0xFF&(a>>8));
+    EEPROM_WriteByte(temp,(p+1));
+}
+
+
 void visual(){
         LCD_PrintNumber(0x01&(ds.hour>>4));
         LCD_PrintNumber((0b00001111)&ds.hour);
@@ -81,6 +99,19 @@ void visual(){
         LCD_PutChar(':');       
         LCD_PrintNumber(ds.sec>>4);
         LCD_PrintNumber((0b00001111)&ds.sec);
+}
+
+void EE_get_data(){
+                
+                LCD_ClearDisplay();
+                LCD_Position(0,0);
+                LCD_PrintNumber(E2PROM_16_R(9*k+2));
+                LCD_PrintString(" mV");
+                for(int j=0;j<7;j++){
+                    ds.datos[j]=EEPROM_ReadByte((uint16)(9*k+4+j));
+                }    
+                LCD_Position(1,0);  
+                visual();
 }
 
 
@@ -93,20 +124,27 @@ CY_ISR(Inte){
     temp=ADC_GetResult16();
     aux[2]=ADC_CountsTo_mVolts(temp);
         if((aux[1]>aux[0])&(aux[1]>aux[2])&(aux[1]>=2500)){
-            if(m<8000){
-            m=m+5;
+            
+            if(m<9000){
+            m=m+9; //cantidad de datos guardados
             }
             n=n+1;
             if(n==1000){
-                  n=0;     
+                  n=0;//n=dato actual de escritura de 0 a 1000     
             }
-                EEPROM_WriteByte(aux[2],(uint16)(n));
+            E2PROM_16_W(n,0);
+            //Guardar voltaje
+            E2PROM_16_W(aux[1],9*n+2);
             DS_get_data();
-            for(int j=0;j<=7;j++){
-                EEPROM_WriteByte(ds.datos[j],(uint16)(n+1+j));
+            for(int j=0;j<7;j++){
+                EEPROM_WriteByte(ds.datos[j],(uint16)(9*n+4+j));// Escribe los demas datos
             }
             if(de==0){//Muestra solo si esta en modo reloj
-                LCD_Position(0,4);
+                LCD_Position(0,0);
+                LCD_PrintString("               ");
+                LCD_Position(0,0);
+                LCD_PrintNumber(aux[1]);
+                LCD_PrintString("mV ");    
                 visual();
             }
         }
@@ -119,18 +157,12 @@ CY_ISR(Intswr){
         LCD_ClearDisplay();
         if(de==0){
             de=1;//Actualiza Conversion
-            k=n;
-            if(m==0){
+            k=(E2PROM_16_R(0));
+            if(k==0){
                 LCD_Position(0,0);
                 LCD_PrintString("No hay datos");
             }else{
-                LCD_Position(0,0);
-                LCD_PrintString("V: ");
-                LCD_PrintNumber(EEPROM_ReadByte((uint16)(k)));
-                for(int j=0;j<=7;j++){
-                ds.datos[j]=EEPROM_ReadByte((uint16)(k+j+1));    
-            }
-              visual();
+                EE_get_data();
             }
         }else{
             de=0;
@@ -138,17 +170,21 @@ CY_ISR(Intswr){
         break;
     case 0b00000101:
         if(de==1){//Boton desendente
-            if(k==0){
-                k=1000;
+            k=k-1;
+            if(k<0){
+                k=n;
             }
-                k=k-1;
+            EE_get_data();
+                
         }
         break;
     case 0b00000011:
         if(de==1){//Boton acendente
-            if(k==100){
+            k=k+1;
+            if(k>n){
+                k=0;
             }
-                k=k+1;
+            EE_get_data();                
         }
         break;
      default:
@@ -166,16 +202,17 @@ int main(void)
     IRS_StartEx(Inte);
     ISR_SW_StartEx(Intswr);
     ADC_Start();
-    ds.hour = 0x08;
-    ds.min =  0x54;
-    ds.sec =  0x30; //  08:06:30 am
-    ds.date = 0x09; 
+    ds.hour = 0b00010001;
+    ds.min =  0x16;
+    ds.sec =  0x30; //  11:05:30 am
+    ds.date = 0x0C; 
     ds.month = 0x10;
-    ds.year = 0x18; //1ro octubre 2018
+    ds.year = 0x18; //12 octubre 2018
     ds.weekDay = 5; // Friday: 5th day of week considering monday as first day.
     EEPROM_Start();
-    //DS_init();//Configura 
-    DS_set_data();    
+    DS_init();//Configura 
+    n=(E2PROM_16_R(0));
+    //DS_set_data();    
     for(;;)
     {   if(de==0){
             DS_get_data();     
