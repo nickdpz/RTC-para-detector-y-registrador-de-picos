@@ -1,5 +1,5 @@
 # proyecto4
-# 2018-10-12 03:46:25Z
+# 2018-10-12 17:06:54Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -21,4 +21,5 @@ set_io "M(0)" iocell 2 0
 set_io "SW(0)" iocell 3 5
 set_io "SW(1)" iocell 3 6
 set_io "SW(2)" iocell 3 7
+set_io "LED(0)" iocell 2 1
 set_location "\ADC:ADC_SAR\" sarcell -1 -1 1

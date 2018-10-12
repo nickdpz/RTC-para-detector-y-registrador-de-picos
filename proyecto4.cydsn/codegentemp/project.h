@@ -37,6 +37,8 @@
 #include "SW_aliases.h"
 #include "SW.h"
 #include "ISR_SW.h"
+#include "LED_aliases.h"
+#include "LED.h"
 #include "LCD_LCDPort_aliases.h"
 #include "LCD_LCDPort.h"
 #include "UART_IntClock.h"

@@ -30,7 +30,7 @@ uint8_t datos[8];
 }rtc_t;
 
 rtc_t ds;
-uint16 aux[3]={0,3000,1000};
+uint16 aux[3]={0,0,0};
 volatile uint8 de=0;//Muestra Hora
 volatile uint16 m=0;//  Numero de datos guardados
 volatile uint16 n=0;// Cuenta de datos
