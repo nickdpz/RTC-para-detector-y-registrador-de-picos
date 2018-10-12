@@ -54,6 +54,13 @@
   <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\M_aliases.h" value="HEADER;;;;;M" />
   <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\M.c" value="SOURCE_C;CortexM3;;;;M" />
   <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\M.h" value="HEADER;;;;;M" />
+  <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\EEPROM.c" value="SOURCE_C;CortexM3;;;;EEPROM" />
+  <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\EEPROM.h" value="HEADER;;;;;EEPROM" />
+  <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\SW_aliases.h" value="HEADER;;;;;SW" />
+  <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\SW.c" value="SOURCE_C;CortexM3;;;;SW" />
+  <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\SW.h" value="HEADER;;;;;SW" />
+  <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\ISR_SW.c" value="SOURCE_C;CortexM3;;;;ISR_SW" />
+  <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\ISR_SW.h" value="HEADER;;;;;ISR_SW" />
   <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\LCD_LCDPort_aliases.h" value="HEADER;;;;;LCD_LCDPort" />
   <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\LCD_LCDPort.c" value="SOURCE_C;CortexM3;;;;LCD_LCDPort" />
   <file name="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\codegentemp\LCD_LCDPort.h" value="HEADER;;;;;LCD_LCDPort" />

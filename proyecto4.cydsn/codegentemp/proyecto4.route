@@ -717,6 +717,8 @@ net ClockBlock_BUS_CLK
 	term   ":interrupt_1.clock"
 	switch ":clockblockcell.clk_bus_glb==>:interrupt_0.clock"
 	term   ":interrupt_0.clock"
+	switch ":clockblockcell.clk_bus_glb==>:interrupt_7.clock"
+	term   ":interrupt_7.clock"
 end ClockBlock_BUS_CLK
 net \UART:BUART:tx_fifo_notfull\
 	term   ":udb@[UDB=(3,5)]:dp_wrapper:datapath.f0_bus_stat_comb"
@@ -783,6 +785,13 @@ net Net_69
 	switch ":interrupt_idmux_1.interrupt_idmux_1__out==>:interrupt_1.interrupt"
 	term   ":interrupt_1.interrupt"
 end Net_69
+net Net_74
+	term   ":logicalport_3.interrupt"
+	switch ":logicalport_3.interrupt==>Stub-:dsiswitch_bottom@[DSI=(1,0)][side=bottom]:dsihc_bottom:v40+:dsiswitch_bottom@[DSI=(1,0)][side=bottom]:dsihc_bottom:v42"
+	switch "Stub-:dsiswitch_bottom@[DSI=(1,0)][side=bottom]:dsihc_bottom:v40+:dsiswitch_bottom@[DSI=(1,0)][side=bottom]:dsihc_bottom:v42==>:interrupt_idmux_7.in_0"
+	switch ":interrupt_idmux_7.interrupt_idmux_7__out==>:interrupt_7.interrupt"
+	term   ":interrupt_7.interrupt"
+end Net_74
 net \I2C:Net_1109_0\
 	term   ":ioport2:pin2.fb"
 	switch ":ioport2:pin2.fb==>Stub-:dsiswitch_top@[DSI=(0,4)][side=top]:dsihc_top:v4+:dsiswitch_top@[DSI=(0,4)][side=top]:dsihc_top:v6"

@@ -1,6 +1,6 @@
-C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\proyecto4.cyprj|26b90382-c5a5-4e77-99b9-11cdfb01eab8
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|2cbb9172-974c-4c4a-b994-16438f34bc38
-C:\Users\nikod\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|2b05d4a1-182c-41b0-9799-69fe919b578d
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|038c7cc3-4899-4f18-91e4-46aa7c7a6762
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7119a6c9-a060-4758-a7a1-bc937a8eda1a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|77707f1b-386e-47c0-8ae6-a68da17365d8
+C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\proyecto4.cyprj|4e2f5e10-9b44-4c0d-8a6d-286c545aab48
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|edcfb0f8-7695-4b92-9b25-bc98c4d0df4f
+C:\Users\nikod\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|c1507256-42bc-44a3-a3d9-d56b47bcdec0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5834fc0c-bc8f-4378-a6dd-eac04f967bd5
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|cf7805d3-cf9a-4775-ba29-3c58a2ff389d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ee797632-65d8-4e81-b609-47b40fd81acb

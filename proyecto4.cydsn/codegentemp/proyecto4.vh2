@@ -2,7 +2,7 @@
 --	Conversion of proyecto4.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Oct 11 13:07:17 2018
+--	Thu Oct 11 22:46:21 2018
 --
 
 USE cypress.cypress.all;
@@ -439,6 +439,17 @@ SIGNAL tmpFB_0__M_net_0 : bit;
 SIGNAL tmpIO_0__M_net_0 : bit;
 TERMINAL tmpSIOVREF__M_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__M_net_0 : bit;
+SIGNAL tmpOE__SW_net_2 : bit;
+SIGNAL tmpOE__SW_net_1 : bit;
+SIGNAL tmpOE__SW_net_0 : bit;
+SIGNAL tmpFB_2__SW_net_2 : bit;
+SIGNAL tmpFB_2__SW_net_1 : bit;
+SIGNAL tmpFB_2__SW_net_0 : bit;
+SIGNAL tmpIO_2__SW_net_2 : bit;
+SIGNAL tmpIO_2__SW_net_1 : bit;
+SIGNAL tmpIO_2__SW_net_0 : bit;
+TERMINAL tmpSIOVREF__SW_net_0 : bit;
+SIGNAL Net_74 : bit;
 SIGNAL \UART:BUART:reset_reg\\D\ : bit;
 SIGNAL \UART:BUART:txn\\D\ : bit;
 SIGNAL \UART:BUART:tx_state_1\\D\ : bit;
@@ -1516,6 +1527,80 @@ M:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__SDA_net_0,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__M_net_0);
+SW:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"e851a3b9-efb8-48be-bbb8-b303b216c393",
+		drive_mode=>"010010010",
+		ibuf_enabled=>"111",
+		init_dr_st=>"111",
+		input_sync=>"000",
+		input_clk_en=>'0',
+		input_sync_mode=>"000",
+		intr_mode=>"010101",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>",,",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"000",
+		output_sync=>"000",
+		output_clk_en=>'0',
+		output_mode=>"000",
+		output_reset=>'0',
+		output_clock_mode=>"000",
+		oe_sync=>"000",
+		oe_conn=>"000",
+		oe_reset=>'0',
+		pin_aliases=>",,",
+		pin_mode=>"III",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"111",
+		sio_ibuf=>"00000000",
+		sio_info=>"000000",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"000",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"000000",
+		width=>3,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"000",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"000",
+		ovt_slew_control=>"000000",
+		ovt_hyst_trim=>"000",
+		input_buffer_sel=>"000000")
+	PORT MAP(oe=>(tmpOE__SDA_net_0, tmpOE__SDA_net_0, tmpOE__SDA_net_0),
+		y=>(zero, zero, zero),
+		fb=>(tmpFB_2__SW_net_2, tmpFB_2__SW_net_1, tmpFB_2__SW_net_0),
+		analog=>(open, open, open),
+		io=>(tmpIO_2__SW_net_2, tmpIO_2__SW_net_1, tmpIO_2__SW_net_0),
+		siovref=>(tmpSIOVREF__SW_net_0),
+		annotation=>(open, open, open),
+		in_clock=>zero,
+		in_clock_en=>tmpOE__SDA_net_0,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>tmpOE__SDA_net_0,
+		out_reset=>zero,
+		interrupt=>Net_74);
+ISR_SW:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_74);
 \UART:BUART:reset_reg\:cy_dff
 	PORT MAP(d=>zero,
 		clk=>\UART:BUART:clock_op\,
