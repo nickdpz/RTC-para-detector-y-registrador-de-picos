@@ -223,7 +223,7 @@ int main(void)
     ds.year = 0x18; //12 octubre 2018
     ds.weekDay = 5; // Friday: 5th day of week considering monday as first day.
     EEPROM_Start();
-    DS_init();//Configura 
+    //DS_init();//Configura 
     n=(E2PROM_16_R(0));
     //DS_set_data();    
     for(;;)
