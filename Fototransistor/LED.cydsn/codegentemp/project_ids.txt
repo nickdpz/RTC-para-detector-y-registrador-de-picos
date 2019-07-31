@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8ab0d44a-7f0e-49a1-b047-0a05fb0881ec
+C:\Users\nikod\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|3d716615-a8db-4140-8888-2371890ec553
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7663fc59-8b76-4db6-b9ab-4301d52c8bf0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|19cae315-e0ce-467c-91e9-97d8fcf07bfc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|ca5db625-a120-43dd-9010-c7dd4d49e107
+C:\Users\nikod\Documents\PSoC Creator\Fototransistor\LED.cydsn\LED.cyprj|23f74b4b-334a-40d5-be7b-d772cdb12cb1

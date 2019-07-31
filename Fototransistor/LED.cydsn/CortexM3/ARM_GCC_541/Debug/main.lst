@@ -1,0 +1,671 @@
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.InterruptFoto,"ax",%progbits
+  20              		.align	2
+  21              		.global	InterruptFoto
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	InterruptFoto, %function
+  25              	InterruptFoto:
+  26              	.LFB63:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** 
+  15:main.c        **** CY_ISR(InterruptFoto){
+  28              		.loc 1 15 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 08B5     		push	{r3, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  16:main.c        ****     LED_Write(~LED_Read()); 
+  36              		.loc 1 16 0
+  37 0002 FFF7FEFF 		bl	LED_Read
+  38              	.LVL0:
+  39 0006 C043     		mvns	r0, r0
+  40 0008 C0B2     		uxtb	r0, r0
+  41 000a FFF7FEFF 		bl	LED_Write
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 2
+
+
+  42              	.LVL1:
+  17:main.c        ****     INFRA_ClearInterrupt();
+  43              		.loc 1 17 0
+  44 000e FFF7FEFF 		bl	INFRA_ClearInterrupt
+  45              	.LVL2:
+  46 0012 08BD     		pop	{r3, pc}
+  47              		.cfi_endproc
+  48              	.LFE63:
+  49              		.size	InterruptFoto, .-InterruptFoto
+  50              		.section	.text.main,"ax",%progbits
+  51              		.align	2
+  52              		.global	main
+  53              		.thumb
+  54              		.thumb_func
+  55              		.type	main, %function
+  56              	main:
+  57              	.LFB64:
+  18:main.c        **** }
+  19:main.c        **** int main(void)
+  20:main.c        **** {   
+  58              		.loc 1 20 0
+  59              		.cfi_startproc
+  60              		@ Volatile: function does not return.
+  61              		@ args = 0, pretend = 0, frame = 0
+  62              		@ frame_needed = 0, uses_anonymous_args = 0
+  63 0000 08B5     		push	{r3, lr}
+  64              		.cfi_def_cfa_offset 8
+  65              		.cfi_offset 3, -8
+  66              		.cfi_offset 14, -4
+  21:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  67              		.loc 1 21 0
+  68              		.syntax unified
+  69              	@ 21 "main.c" 1
+  70 0002 62B6     		CPSIE   i
+  71              	@ 0 "" 2
+  22:main.c        ****     ISR_FOTO_StartEx(InterruptFoto);
+  72              		.loc 1 22 0
+  73              		.thumb
+  74              		.syntax unified
+  75 0004 0348     		ldr	r0, .L6
+  76 0006 FFF7FEFF 		bl	ISR_FOTO_StartEx
+  77              	.LVL3:
+  23:main.c        ****     LED_Write(1);
+  78              		.loc 1 23 0
+  79 000a 0120     		movs	r0, #1
+  80 000c FFF7FEFF 		bl	LED_Write
+  81              	.LVL4:
+  82              	.L4:
+  83 0010 FEE7     		b	.L4
+  84              	.L7:
+  85 0012 00BF     		.align	2
+  86              	.L6:
+  87 0014 00000000 		.word	InterruptFoto
+  88              		.cfi_endproc
+  89              	.LFE64:
+  90              		.size	main, .-main
+  91              		.text
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 3
+
+
+  92              	.Letext0:
+  93              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  94              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  95              		.file 4 "Generated_Source\\PSoC5/LED.h"
+  96              		.file 5 "Generated_Source\\PSoC5/INFRA.h"
+  97              		.file 6 "Generated_Source\\PSoC5/ISR_FOTO.h"
+  98              		.file 7 "Generated_Source\\PSoC5/core_cm3.h"
+  99              		.section	.debug_info,"",%progbits
+ 100              	.Ldebug_info0:
+ 101 0000 4F010000 		.4byte	0x14f
+ 102 0004 0400     		.2byte	0x4
+ 103 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 104 000a 04       		.byte	0x4
+ 105 000b 01       		.uleb128 0x1
+ 106 000c 3A000000 		.4byte	.LASF20
+ 107 0010 0C       		.byte	0xc
+ 108 0011 2E000000 		.4byte	.LASF21
+ 109 0015 15010000 		.4byte	.LASF22
+ 110 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 111 001d 00000000 		.4byte	0
+ 112 0021 00000000 		.4byte	.Ldebug_line0
+ 113 0025 02       		.uleb128 0x2
+ 114 0026 01       		.byte	0x1
+ 115 0027 06       		.byte	0x6
+ 116 0028 A7010000 		.4byte	.LASF0
+ 117 002c 02       		.uleb128 0x2
+ 118 002d 01       		.byte	0x1
+ 119 002e 08       		.byte	0x8
+ 120 002f 54010000 		.4byte	.LASF1
+ 121 0033 02       		.uleb128 0x2
+ 122 0034 02       		.byte	0x2
+ 123 0035 05       		.byte	0x5
+ 124 0036 CF010000 		.4byte	.LASF2
+ 125 003a 02       		.uleb128 0x2
+ 126 003b 02       		.byte	0x2
+ 127 003c 07       		.byte	0x7
+ 128 003d 0E000000 		.4byte	.LASF3
+ 129 0041 03       		.uleb128 0x3
+ 130 0042 BF010000 		.4byte	.LASF9
+ 131 0046 02       		.byte	0x2
+ 132 0047 3F       		.byte	0x3f
+ 133 0048 4C000000 		.4byte	0x4c
+ 134 004c 02       		.uleb128 0x2
+ 135 004d 04       		.byte	0x4
+ 136 004e 05       		.byte	0x5
+ 137 004f 7C010000 		.4byte	.LASF4
+ 138 0053 02       		.uleb128 0x2
+ 139 0054 04       		.byte	0x4
+ 140 0055 07       		.byte	0x7
+ 141 0056 D2000000 		.4byte	.LASF5
+ 142 005a 02       		.uleb128 0x2
+ 143 005b 08       		.byte	0x8
+ 144 005c 05       		.byte	0x5
+ 145 005d 00000000 		.4byte	.LASF6
+ 146 0061 02       		.uleb128 0x2
+ 147 0062 08       		.byte	0x8
+ 148 0063 07       		.byte	0x7
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 4
+
+
+ 149 0064 E4000000 		.4byte	.LASF7
+ 150 0068 04       		.uleb128 0x4
+ 151 0069 04       		.byte	0x4
+ 152 006a 05       		.byte	0x5
+ 153 006b 696E7400 		.ascii	"int\000"
+ 154 006f 02       		.uleb128 0x2
+ 155 0070 04       		.byte	0x4
+ 156 0071 07       		.byte	0x7
+ 157 0072 21000000 		.4byte	.LASF8
+ 158 0076 03       		.uleb128 0x3
+ 159 0077 D9010000 		.4byte	.LASF10
+ 160 007b 03       		.byte	0x3
+ 161 007c 2C       		.byte	0x2c
+ 162 007d 41000000 		.4byte	0x41
+ 163 0081 02       		.uleb128 0x2
+ 164 0082 04       		.byte	0x4
+ 165 0083 04       		.byte	0x4
+ 166 0084 C9010000 		.4byte	.LASF11
+ 167 0088 02       		.uleb128 0x2
+ 168 0089 08       		.byte	0x8
+ 169 008a 04       		.byte	0x4
+ 170 008b 85010000 		.4byte	.LASF12
+ 171 008f 02       		.uleb128 0x2
+ 172 0090 01       		.byte	0x1
+ 173 0091 08       		.byte	0x8
+ 174 0092 62010000 		.4byte	.LASF13
+ 175 0096 02       		.uleb128 0x2
+ 176 0097 08       		.byte	0x8
+ 177 0098 04       		.byte	0x4
+ 178 0099 B3010000 		.4byte	.LASF14
+ 179 009d 02       		.uleb128 0x2
+ 180 009e 04       		.byte	0x4
+ 181 009f 07       		.byte	0x7
+ 182 00a0 E1010000 		.4byte	.LASF15
+ 183 00a4 05       		.uleb128 0x5
+ 184 00a5 8C010000 		.4byte	.LASF23
+ 185 00a9 01       		.byte	0x1
+ 186 00aa 0F       		.byte	0xf
+ 187 00ab 00000000 		.4byte	.LFB63
+ 188 00af 14000000 		.4byte	.LFE63-.LFB63
+ 189 00b3 01       		.uleb128 0x1
+ 190 00b4 9C       		.byte	0x9c
+ 191 00b5 D5000000 		.4byte	0xd5
+ 192 00b9 06       		.uleb128 0x6
+ 193 00ba 06000000 		.4byte	.LVL0
+ 194 00be 26010000 		.4byte	0x126
+ 195 00c2 06       		.uleb128 0x6
+ 196 00c3 0E000000 		.4byte	.LVL1
+ 197 00c7 31010000 		.4byte	0x131
+ 198 00cb 06       		.uleb128 0x6
+ 199 00cc 12000000 		.4byte	.LVL2
+ 200 00d0 3C010000 		.4byte	0x13c
+ 201 00d4 00       		.byte	0
+ 202 00d5 07       		.uleb128 0x7
+ 203 00d6 35000000 		.4byte	.LASF24
+ 204 00da 01       		.byte	0x1
+ 205 00db 13       		.byte	0x13
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 5
+
+
+ 206 00dc 68000000 		.4byte	0x68
+ 207 00e0 00000000 		.4byte	.LFB64
+ 208 00e4 18000000 		.4byte	.LFE64-.LFB64
+ 209 00e8 01       		.uleb128 0x1
+ 210 00e9 9C       		.byte	0x9c
+ 211 00ea 15010000 		.4byte	0x115
+ 212 00ee 08       		.uleb128 0x8
+ 213 00ef 0A000000 		.4byte	.LVL3
+ 214 00f3 47010000 		.4byte	0x147
+ 215 00f7 05010000 		.4byte	0x105
+ 216 00fb 09       		.uleb128 0x9
+ 217 00fc 01       		.uleb128 0x1
+ 218 00fd 50       		.byte	0x50
+ 219 00fe 05       		.uleb128 0x5
+ 220 00ff 03       		.byte	0x3
+ 221 0100 00000000 		.4byte	InterruptFoto
+ 222 0104 00       		.byte	0
+ 223 0105 0A       		.uleb128 0xa
+ 224 0106 10000000 		.4byte	.LVL4
+ 225 010a 31010000 		.4byte	0x131
+ 226 010e 09       		.uleb128 0x9
+ 227 010f 01       		.uleb128 0x1
+ 228 0110 50       		.byte	0x50
+ 229 0111 01       		.uleb128 0x1
+ 230 0112 31       		.byte	0x31
+ 231 0113 00       		.byte	0
+ 232 0114 00       		.byte	0
+ 233 0115 0B       		.uleb128 0xb
+ 234 0116 9A010000 		.4byte	.LASF25
+ 235 011a 07       		.byte	0x7
+ 236 011b 1207     		.2byte	0x712
+ 237 011d 21010000 		.4byte	0x121
+ 238 0121 0C       		.uleb128 0xc
+ 239 0122 76000000 		.4byte	0x76
+ 240 0126 0D       		.uleb128 0xd
+ 241 0127 FB000000 		.4byte	.LASF16
+ 242 012b FB000000 		.4byte	.LASF16
+ 243 012f 04       		.byte	0x4
+ 244 0130 29       		.byte	0x29
+ 245 0131 0D       		.uleb128 0xd
+ 246 0132 C8000000 		.4byte	.LASF17
+ 247 0136 C8000000 		.4byte	.LASF17
+ 248 013a 04       		.byte	0x4
+ 249 013b 26       		.byte	0x26
+ 250 013c 0D       		.uleb128 0xd
+ 251 013d 67010000 		.4byte	.LASF18
+ 252 0141 67010000 		.4byte	.LASF18
+ 253 0145 05       		.byte	0x5
+ 254 0146 2B       		.byte	0x2b
+ 255 0147 0D       		.uleb128 0xd
+ 256 0148 04010000 		.4byte	.LASF19
+ 257 014c 04010000 		.4byte	.LASF19
+ 258 0150 06       		.byte	0x6
+ 259 0151 18       		.byte	0x18
+ 260 0152 00       		.byte	0
+ 261              		.section	.debug_abbrev,"",%progbits
+ 262              	.Ldebug_abbrev0:
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 6
+
+
+ 263 0000 01       		.uleb128 0x1
+ 264 0001 11       		.uleb128 0x11
+ 265 0002 01       		.byte	0x1
+ 266 0003 25       		.uleb128 0x25
+ 267 0004 0E       		.uleb128 0xe
+ 268 0005 13       		.uleb128 0x13
+ 269 0006 0B       		.uleb128 0xb
+ 270 0007 03       		.uleb128 0x3
+ 271 0008 0E       		.uleb128 0xe
+ 272 0009 1B       		.uleb128 0x1b
+ 273 000a 0E       		.uleb128 0xe
+ 274 000b 55       		.uleb128 0x55
+ 275 000c 17       		.uleb128 0x17
+ 276 000d 11       		.uleb128 0x11
+ 277 000e 01       		.uleb128 0x1
+ 278 000f 10       		.uleb128 0x10
+ 279 0010 17       		.uleb128 0x17
+ 280 0011 00       		.byte	0
+ 281 0012 00       		.byte	0
+ 282 0013 02       		.uleb128 0x2
+ 283 0014 24       		.uleb128 0x24
+ 284 0015 00       		.byte	0
+ 285 0016 0B       		.uleb128 0xb
+ 286 0017 0B       		.uleb128 0xb
+ 287 0018 3E       		.uleb128 0x3e
+ 288 0019 0B       		.uleb128 0xb
+ 289 001a 03       		.uleb128 0x3
+ 290 001b 0E       		.uleb128 0xe
+ 291 001c 00       		.byte	0
+ 292 001d 00       		.byte	0
+ 293 001e 03       		.uleb128 0x3
+ 294 001f 16       		.uleb128 0x16
+ 295 0020 00       		.byte	0
+ 296 0021 03       		.uleb128 0x3
+ 297 0022 0E       		.uleb128 0xe
+ 298 0023 3A       		.uleb128 0x3a
+ 299 0024 0B       		.uleb128 0xb
+ 300 0025 3B       		.uleb128 0x3b
+ 301 0026 0B       		.uleb128 0xb
+ 302 0027 49       		.uleb128 0x49
+ 303 0028 13       		.uleb128 0x13
+ 304 0029 00       		.byte	0
+ 305 002a 00       		.byte	0
+ 306 002b 04       		.uleb128 0x4
+ 307 002c 24       		.uleb128 0x24
+ 308 002d 00       		.byte	0
+ 309 002e 0B       		.uleb128 0xb
+ 310 002f 0B       		.uleb128 0xb
+ 311 0030 3E       		.uleb128 0x3e
+ 312 0031 0B       		.uleb128 0xb
+ 313 0032 03       		.uleb128 0x3
+ 314 0033 08       		.uleb128 0x8
+ 315 0034 00       		.byte	0
+ 316 0035 00       		.byte	0
+ 317 0036 05       		.uleb128 0x5
+ 318 0037 2E       		.uleb128 0x2e
+ 319 0038 01       		.byte	0x1
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 7
+
+
+ 320 0039 3F       		.uleb128 0x3f
+ 321 003a 19       		.uleb128 0x19
+ 322 003b 03       		.uleb128 0x3
+ 323 003c 0E       		.uleb128 0xe
+ 324 003d 3A       		.uleb128 0x3a
+ 325 003e 0B       		.uleb128 0xb
+ 326 003f 3B       		.uleb128 0x3b
+ 327 0040 0B       		.uleb128 0xb
+ 328 0041 27       		.uleb128 0x27
+ 329 0042 19       		.uleb128 0x19
+ 330 0043 11       		.uleb128 0x11
+ 331 0044 01       		.uleb128 0x1
+ 332 0045 12       		.uleb128 0x12
+ 333 0046 06       		.uleb128 0x6
+ 334 0047 40       		.uleb128 0x40
+ 335 0048 18       		.uleb128 0x18
+ 336 0049 9742     		.uleb128 0x2117
+ 337 004b 19       		.uleb128 0x19
+ 338 004c 01       		.uleb128 0x1
+ 339 004d 13       		.uleb128 0x13
+ 340 004e 00       		.byte	0
+ 341 004f 00       		.byte	0
+ 342 0050 06       		.uleb128 0x6
+ 343 0051 898201   		.uleb128 0x4109
+ 344 0054 00       		.byte	0
+ 345 0055 11       		.uleb128 0x11
+ 346 0056 01       		.uleb128 0x1
+ 347 0057 31       		.uleb128 0x31
+ 348 0058 13       		.uleb128 0x13
+ 349 0059 00       		.byte	0
+ 350 005a 00       		.byte	0
+ 351 005b 07       		.uleb128 0x7
+ 352 005c 2E       		.uleb128 0x2e
+ 353 005d 01       		.byte	0x1
+ 354 005e 3F       		.uleb128 0x3f
+ 355 005f 19       		.uleb128 0x19
+ 356 0060 03       		.uleb128 0x3
+ 357 0061 0E       		.uleb128 0xe
+ 358 0062 3A       		.uleb128 0x3a
+ 359 0063 0B       		.uleb128 0xb
+ 360 0064 3B       		.uleb128 0x3b
+ 361 0065 0B       		.uleb128 0xb
+ 362 0066 27       		.uleb128 0x27
+ 363 0067 19       		.uleb128 0x19
+ 364 0068 49       		.uleb128 0x49
+ 365 0069 13       		.uleb128 0x13
+ 366 006a 8701     		.uleb128 0x87
+ 367 006c 19       		.uleb128 0x19
+ 368 006d 11       		.uleb128 0x11
+ 369 006e 01       		.uleb128 0x1
+ 370 006f 12       		.uleb128 0x12
+ 371 0070 06       		.uleb128 0x6
+ 372 0071 40       		.uleb128 0x40
+ 373 0072 18       		.uleb128 0x18
+ 374 0073 9742     		.uleb128 0x2117
+ 375 0075 19       		.uleb128 0x19
+ 376 0076 01       		.uleb128 0x1
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 8
+
+
+ 377 0077 13       		.uleb128 0x13
+ 378 0078 00       		.byte	0
+ 379 0079 00       		.byte	0
+ 380 007a 08       		.uleb128 0x8
+ 381 007b 898201   		.uleb128 0x4109
+ 382 007e 01       		.byte	0x1
+ 383 007f 11       		.uleb128 0x11
+ 384 0080 01       		.uleb128 0x1
+ 385 0081 31       		.uleb128 0x31
+ 386 0082 13       		.uleb128 0x13
+ 387 0083 01       		.uleb128 0x1
+ 388 0084 13       		.uleb128 0x13
+ 389 0085 00       		.byte	0
+ 390 0086 00       		.byte	0
+ 391 0087 09       		.uleb128 0x9
+ 392 0088 8A8201   		.uleb128 0x410a
+ 393 008b 00       		.byte	0
+ 394 008c 02       		.uleb128 0x2
+ 395 008d 18       		.uleb128 0x18
+ 396 008e 9142     		.uleb128 0x2111
+ 397 0090 18       		.uleb128 0x18
+ 398 0091 00       		.byte	0
+ 399 0092 00       		.byte	0
+ 400 0093 0A       		.uleb128 0xa
+ 401 0094 898201   		.uleb128 0x4109
+ 402 0097 01       		.byte	0x1
+ 403 0098 11       		.uleb128 0x11
+ 404 0099 01       		.uleb128 0x1
+ 405 009a 31       		.uleb128 0x31
+ 406 009b 13       		.uleb128 0x13
+ 407 009c 00       		.byte	0
+ 408 009d 00       		.byte	0
+ 409 009e 0B       		.uleb128 0xb
+ 410 009f 34       		.uleb128 0x34
+ 411 00a0 00       		.byte	0
+ 412 00a1 03       		.uleb128 0x3
+ 413 00a2 0E       		.uleb128 0xe
+ 414 00a3 3A       		.uleb128 0x3a
+ 415 00a4 0B       		.uleb128 0xb
+ 416 00a5 3B       		.uleb128 0x3b
+ 417 00a6 05       		.uleb128 0x5
+ 418 00a7 49       		.uleb128 0x49
+ 419 00a8 13       		.uleb128 0x13
+ 420 00a9 3F       		.uleb128 0x3f
+ 421 00aa 19       		.uleb128 0x19
+ 422 00ab 3C       		.uleb128 0x3c
+ 423 00ac 19       		.uleb128 0x19
+ 424 00ad 00       		.byte	0
+ 425 00ae 00       		.byte	0
+ 426 00af 0C       		.uleb128 0xc
+ 427 00b0 35       		.uleb128 0x35
+ 428 00b1 00       		.byte	0
+ 429 00b2 49       		.uleb128 0x49
+ 430 00b3 13       		.uleb128 0x13
+ 431 00b4 00       		.byte	0
+ 432 00b5 00       		.byte	0
+ 433 00b6 0D       		.uleb128 0xd
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 9
+
+
+ 434 00b7 2E       		.uleb128 0x2e
+ 435 00b8 00       		.byte	0
+ 436 00b9 3F       		.uleb128 0x3f
+ 437 00ba 19       		.uleb128 0x19
+ 438 00bb 3C       		.uleb128 0x3c
+ 439 00bc 19       		.uleb128 0x19
+ 440 00bd 6E       		.uleb128 0x6e
+ 441 00be 0E       		.uleb128 0xe
+ 442 00bf 03       		.uleb128 0x3
+ 443 00c0 0E       		.uleb128 0xe
+ 444 00c1 3A       		.uleb128 0x3a
+ 445 00c2 0B       		.uleb128 0xb
+ 446 00c3 3B       		.uleb128 0x3b
+ 447 00c4 0B       		.uleb128 0xb
+ 448 00c5 00       		.byte	0
+ 449 00c6 00       		.byte	0
+ 450 00c7 00       		.byte	0
+ 451              		.section	.debug_aranges,"",%progbits
+ 452 0000 24000000 		.4byte	0x24
+ 453 0004 0200     		.2byte	0x2
+ 454 0006 00000000 		.4byte	.Ldebug_info0
+ 455 000a 04       		.byte	0x4
+ 456 000b 00       		.byte	0
+ 457 000c 0000     		.2byte	0
+ 458 000e 0000     		.2byte	0
+ 459 0010 00000000 		.4byte	.LFB63
+ 460 0014 14000000 		.4byte	.LFE63-.LFB63
+ 461 0018 00000000 		.4byte	.LFB64
+ 462 001c 18000000 		.4byte	.LFE64-.LFB64
+ 463 0020 00000000 		.4byte	0
+ 464 0024 00000000 		.4byte	0
+ 465              		.section	.debug_ranges,"",%progbits
+ 466              	.Ldebug_ranges0:
+ 467 0000 00000000 		.4byte	.LFB63
+ 468 0004 14000000 		.4byte	.LFE63
+ 469 0008 00000000 		.4byte	.LFB64
+ 470 000c 18000000 		.4byte	.LFE64
+ 471 0010 00000000 		.4byte	0
+ 472 0014 00000000 		.4byte	0
+ 473              		.section	.debug_line,"",%progbits
+ 474              	.Ldebug_line0:
+ 475 0000 8A010000 		.section	.debug_str,"MS",%progbits,1
+ 475      02006101 
+ 475      00000201 
+ 475      FB0E0D00 
+ 475      01010101 
+ 476              	.LASF6:
+ 477 0000 6C6F6E67 		.ascii	"long long int\000"
+ 477      206C6F6E 
+ 477      6720696E 
+ 477      7400
+ 478              	.LASF3:
+ 479 000e 73686F72 		.ascii	"short unsigned int\000"
+ 479      7420756E 
+ 479      7369676E 
+ 479      65642069 
+ 479      6E7400
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 10
+
+
+ 480              	.LASF8:
+ 481 0021 756E7369 		.ascii	"unsigned int\000"
+ 481      676E6564 
+ 481      20696E74 
+ 481      00
+ 482              	.LASF21:
+ 483 002e 6D61696E 		.ascii	"main.c\000"
+ 483      2E6300
+ 484              	.LASF24:
+ 485 0035 6D61696E 		.ascii	"main\000"
+ 485      00
+ 486              	.LASF20:
+ 487 003a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 487      43313120 
+ 487      352E342E 
+ 487      31203230 
+ 487      31363036 
+ 488 006d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 488      20726576 
+ 488      6973696F 
+ 488      6E203233 
+ 488      37373135 
+ 489 00a0 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 489      66756E63 
+ 489      74696F6E 
+ 489      2D736563 
+ 489      74696F6E 
+ 490              	.LASF17:
+ 491 00c8 4C45445F 		.ascii	"LED_Write\000"
+ 491      57726974 
+ 491      6500
+ 492              	.LASF5:
+ 493 00d2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 493      20756E73 
+ 493      69676E65 
+ 493      6420696E 
+ 493      7400
+ 494              	.LASF7:
+ 495 00e4 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 495      206C6F6E 
+ 495      6720756E 
+ 495      7369676E 
+ 495      65642069 
+ 496              	.LASF16:
+ 497 00fb 4C45445F 		.ascii	"LED_Read\000"
+ 497      52656164 
+ 497      00
+ 498              	.LASF19:
+ 499 0104 4953525F 		.ascii	"ISR_FOTO_StartEx\000"
+ 499      464F544F 
+ 499      5F537461 
+ 499      72744578 
+ 499      00
+ 500              	.LASF22:
+ 501 0115 433A5C55 		.ascii	"C:\\Users\\nikod\\Documents\\PSoC Creator\\Fototran"
+ 501      73657273 
+ 501      5C6E696B 
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 11
+
+
+ 501      6F645C44 
+ 501      6F63756D 
+ 502 0143 73697374 		.ascii	"sistor\\LED.cydsn\000"
+ 502      6F725C4C 
+ 502      45442E63 
+ 502      7964736E 
+ 502      00
+ 503              	.LASF1:
+ 504 0154 756E7369 		.ascii	"unsigned char\000"
+ 504      676E6564 
+ 504      20636861 
+ 504      7200
+ 505              	.LASF13:
+ 506 0162 63686172 		.ascii	"char\000"
+ 506      00
+ 507              	.LASF18:
+ 508 0167 494E4652 		.ascii	"INFRA_ClearInterrupt\000"
+ 508      415F436C 
+ 508      65617249 
+ 508      6E746572 
+ 508      72757074 
+ 509              	.LASF4:
+ 510 017c 6C6F6E67 		.ascii	"long int\000"
+ 510      20696E74 
+ 510      00
+ 511              	.LASF12:
+ 512 0185 646F7562 		.ascii	"double\000"
+ 512      6C6500
+ 513              	.LASF23:
+ 514 018c 496E7465 		.ascii	"InterruptFoto\000"
+ 514      72727570 
+ 514      74466F74 
+ 514      6F00
+ 515              	.LASF25:
+ 516 019a 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 516      52784275 
+ 516      66666572 
+ 516      00
+ 517              	.LASF0:
+ 518 01a7 7369676E 		.ascii	"signed char\000"
+ 518      65642063 
+ 518      68617200 
+ 519              	.LASF14:
+ 520 01b3 6C6F6E67 		.ascii	"long double\000"
+ 520      20646F75 
+ 520      626C6500 
+ 521              	.LASF9:
+ 522 01bf 5F5F696E 		.ascii	"__int32_t\000"
+ 522      7433325F 
+ 522      7400
+ 523              	.LASF11:
+ 524 01c9 666C6F61 		.ascii	"float\000"
+ 524      7400
+ 525              	.LASF2:
+ 526 01cf 73686F72 		.ascii	"short int\000"
+ 526      7420696E 
+ 526      7400
+ARM GAS  C:\Users\nikod\AppData\Local\Temp\ccBKZm8h.s 			page 12
+
+
+ 527              	.LASF10:
+ 528 01d9 696E7433 		.ascii	"int32_t\000"
+ 528      325F7400 
+ 529              	.LASF15:
+ 530 01e1 73697A65 		.ascii	"sizetype\000"
+ 530      74797065 
+ 530      00
+ 531              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

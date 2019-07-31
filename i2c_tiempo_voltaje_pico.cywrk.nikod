@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="i2c_tiempo_voltaje_pico\proyecto4\proyecto4.cydwr\Pins">
 <ExpandedNodeIds>
 <v>i2c_tiempo_voltaje_pico</v>
 <v>i2c_tiempo_voltaje_pico\proyecto4</v>
@@ -67,8 +67,6 @@
 <v>i2c_tiempo_voltaje_pico\proyecto4\Generated_Source\PSoC5\ISR_SW</v>
 <v>i2c_tiempo_voltaje_pico\proyecto4\Generated_Source\PSoC5\LCD</v>
 <v>i2c_tiempo_voltaje_pico\proyecto4\Generated_Source\PSoC5\LCD_LCDPort</v>
-<v>i2c_tiempo_voltaje_pico\proyecto4\Generated_Source\PSoC5\LED</v>
-<v>i2c_tiempo_voltaje_pico\proyecto4\Generated_Source\PSoC5\M</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -175,8 +173,6 @@
 <v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_PM.lst</v>
 <v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_SLAVE.lst</v>
 <v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\IRS.lst</v>
-<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_SW.lst</v>
-<v>i2c_tiempo_voltaje_pico\proyecto4\CortexM3\ARM_GCC_541\Debug\Listing Files\LCD.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -245,8 +241,8 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\proyecto4.cydsn\main.c" />
 <name v=".\proyecto4.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\proyecto4.cydsn\main.c" />
 <name v=".\proyecto4.cydsn\proyecto4.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
@@ -255,7 +251,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1007, 439" SelectedTabbedMdiWindow="23712fe1-15c7-4e3d-96f7-55306b6bca5b"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="4135072b-1754-4e5d-9fa2-a5f92d2695ae" /><DocumentWindow Key="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\main.c" Guid="23712fe1-15c7-4e3d-96f7-55306b6bca5b" /><DocumentWindow Key="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\TopDesign\TopDesign.cysch" Guid="7eb2ccbc-f468-4a50-8b99-d185a54aa3c2" /><DocumentWindow Key="C:\Users\nikod\Documents\Sistemas Embebidos\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\proyecto4.cydwr" Guid="c13d7f31-32bf-4052-bb13-b56a0d62e7d2" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1156, 363" SelectedTabbedMdiWindow="38bd4dfd-e879-406d-a27a-7f86567bd4ad"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="4135072b-1754-4e5d-9fa2-a5f92d2695ae" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\TopDesign\TopDesign.cysch" Guid="fe4e98e6-b343-485a-a1d7-4757c2c337c3" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\main.c" Guid="38bd4dfd-e879-406d-a27a-7f86567bd4ad" /><DocumentWindow Key="C:\Users\nikod\Documents\PSoC Creator\RTC-para-detector-y-registrador-de-picos\proyecto4.cydsn\proyecto4.cydwr" Guid="9518f685-1cfd-4e83-a8b5-03aa4a400b63" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

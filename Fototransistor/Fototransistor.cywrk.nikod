@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\TopDesign</v>
+<v>Fototransistor\LED\LED.cydwr</v>
+<v>Fototransistor\LED\LED.cydwr\Pins</v>
+<v>Fototransistor\LED\LED.cydwr\Analog</v>
+<v>Fototransistor\LED\LED.cydwr\Clocks</v>
+<v>Fototransistor\LED\LED.cydwr\Interrupts</v>
+<v>Fototransistor\LED\LED.cydwr\DMA</v>
+<v>Fototransistor\LED\LED.cydwr\System</v>
+<v>Fototransistor\LED\LED.cydwr\Directives</v>
+<v>Fototransistor\LED\LED.cydwr\Flash Security</v>
+<v>Fototransistor\LED\LED.cydwr\EEPROM</v>
+<v>Fototransistor\LED\Header Files</v>
+<v>Fototransistor\LED\Header Files\cyapicallbacks.h</v>
+<v>Fototransistor\LED\Source Files</v>
+<v>Fototransistor\LED\Source Files\main.c</v>
+<v>Fototransistor\LED\Generated_Source</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\TopDesign</v>
+<v>Fototransistor\LED\LED.cydwr</v>
+<v>Fototransistor\LED\LED.cydwr\Pins</v>
+<v>Fototransistor\LED\LED.cydwr\Analog</v>
+<v>Fototransistor\LED\LED.cydwr\Clocks</v>
+<v>Fototransistor\LED\LED.cydwr\Interrupts</v>
+<v>Fototransistor\LED\LED.cydwr\DMA</v>
+<v>Fototransistor\LED\LED.cydwr\System</v>
+<v>Fototransistor\LED\LED.cydwr\Directives</v>
+<v>Fototransistor\LED\LED.cydwr\Flash Security</v>
+<v>Fototransistor\LED\LED.cydwr\EEPROM</v>
+<v>Fototransistor\LED\Header Files</v>
+<v>Fototransistor\LED\Header Files\cyapicallbacks.h</v>
+<v>Fototransistor\LED\Source Files</v>
+<v>Fototransistor\LED\Source Files\main.c</v>
+<v>Fototransistor\LED\Generated_Source</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cy_boot</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\INFRA</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\ISR_FOTO</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\LED</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cydevice.h</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Fototransistor\LED\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\TopDesign</v>
+<v>Fototransistor\LED\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\TopDesign</v>
+<v>Fototransistor\LED\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\CortexM3</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\INFRA.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_FOTO.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\LED.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\LED.elf</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\LED.hex</v>
+<v>Fototransistor\LED\CortexM3\ARM_GCC_541\Debug\LED.map</v>
+<v>Fototransistor\LED\LED.gpdsc</v>
+<v>Fototransistor\LED\LED.rpt</v>
+<v>Fototransistor\LED\LED_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\LED.rpt</v>
+<v>Fototransistor\LED\LED_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\PSoC 5LP Architecture TRM</v>
+<v>Fototransistor\LED\CY8C58LP Family Datasheet</v>
+<v>Fototransistor\LED\System Reference Guides</v>
+<v>Fototransistor\LED\System Reference Guides\cy_boot_v5_80</v>
+<v>Fototransistor\LED\cy_isr_v1_70.pdf</v>
+<v>Fototransistor\LED\cy_pins_v2_20</v>
+<v>Fototransistor\LED\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Fototransistor</v>
+<v>Fototransistor\LED</v>
+<v>Fototransistor\LED\PSoC 5LP Architecture TRM</v>
+<v>Fototransistor\LED\CY8C58LP Family Datasheet</v>
+<v>Fototransistor\LED\System Reference Guides</v>
+<v>Fototransistor\LED\System Reference Guides\cy_boot_v5_80</v>
+<v>Fototransistor\LED\cy_isr_v1_70.pdf</v>
+<v>Fototransistor\LED\cy_pins_v2_20</v>
+<v>Fototransistor\LED\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
